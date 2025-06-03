@@ -217,9 +217,172 @@ section .about-self .right .social a{
   margin-right: 0.2rem;
 }
 
+section .do-me::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+section .do-me .do-inner{
+  background-color:#fff;
+  width:30%;
+  padding:2rem; 
+  float:left;
+  margin-right:5%;
+  cursor:pointer;
+}
+
+section .do-me .do-inner:last-child{
+  margin-right:0;
+}
+section .do-me .do-inner .icon i{
+  font-size:2.5rem;
+  color:#ff6a6a;
+}
+
+section .do-me .do-inner .content h3{
+  font-size:2rem;
+  margin:1rem 0;
+}
+
+section .do-me .do-inner .content p{
+  font-size:1.15rem;
+}
+section .do-me .do-inner:hover{
+  background-color:lightcoral;
+  color:white;
+}
+
+section .do-me .do-inner:hover i{
+  color:white;
+}
+
 .bg{
     background: url('/images/background.jpg') center center;
     background-size: cover;
     background-attachment: fixed;
     height: 650px;
+}
+
+section.portfolio::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+
+section.portfolio .portfolio-inner{
+  width:30%;
+  margin-right:5%;
+  padding:1rem 1rem 1.5rem 1rem;
+  float:left;
+  background-color:#f8f8f8;
+  border:1px solid #ccc;
+  margin-bottom:3rem;
+}
+
+section.portfolio .portfolio-inner:nth-child(3n){
+   margin-right:0;
+}
+
+section.portfolio .portfolio-inner img{
+  width:100%;
+  display:block;
+}
+
+section.portfolio .portfolio-inner strong{
+  color:#ff6a6a;
+  margin:0.5rem 0;
+  display:block;
+}
+
+section.portfolio .portfolio-inner h3{
+  font-size:1.75rem;
+}
+section.contact .contact-me::after{
+  content:"";
+  display:block;
+  clear:both;
+}
+section.contact .contact-me .left{
+  width:30%;
+  float:left;
+}
+section.contact .contact-me .right{
+  float:left;
+  width:65%;
+  margin-left:5%;
+}
+section.contact .contact-me .left .card{
+  border:1px solid #ccc;
+  padding:1rem;
+  display:flex;
+  align-items:center;
+  margin-bottom:1.25rem;
+}
+section.contact .contact-me .left .card .icon i{
+  font-size:2rem;
+  margin-right:15px;
+}
+section.contact .contact-me .right{ 
+  float:left;
+  width:65%;
+  margin-left:5%;
+  margin-bottom:2rem;
+  border:1px solid #ccc;
+  padding:1rem;
+}
+section.contact .contact-me .right .form-group{
+  margin-bottom:1.25rem;
+}
+
+section.contact .contact-me .right .form-group label{
+  display:block;
+  margin-bottom:0.85rem;
+}
+
+section.contact .contact-me .right .form-group input{
+  padding:0.625rem;
+  width:100%;
+  outline:none;
+  border:1px solid #ccc;
+  border-radius:10px;
+}
+
+section.contact .contact-me .right .form-group input:focus{
+  border:1px solid #719ECE;
+  box-shadow:0 0 10px #719ECE;
+}
+
+section.contact .contact-me .right .form-group textarea{
+  height:300px;
+  width:100%;
+  resize:none;
+  border:1px solid #ccc;
+  border-radius:10px;
+}
+
+section.contact .contact-me .right .form-group textarea:focus{
+  outline:none;
+  border:1px solid #719ECE;
+  box-shadow:0 0 10px #719ECE;
+}
+
+section.contact .contact-me .right button{
+  width:100%;
+  padding:1rem;
+  background-color:#f78b00;
+  border:none;
+  color:white;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+.footer p {
+  margin: 0;
 }
